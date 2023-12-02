@@ -4,8 +4,8 @@ import Statistics from './Statistics/Statistics';
 import data from './Data/data.json';
 import FriendList from './FriendList/FriendList';
 import friends from './Data/friends.json';
-// import transactions from './data/transactions.json';
-// import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from './Data/transactions.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 import SectionText from './SectionText/SectionText';
 export const App = () => {
   return (
@@ -24,8 +24,8 @@ export const App = () => {
       <SectionText text="3 - Список друзів" />
       <FriendList friends={friends} />
 
-      {/* <SectionText text="4 - Історія транзакцій" />
-      <TransactionHistory items={transactions} /> */}
+      <SectionText text="4 - Історія транзакцій" />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
